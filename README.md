@@ -7,7 +7,7 @@ The dataset was downloaded from https://snap.stanford.edu/data/egonets-Facebook.
 
 #### Transform the graph to undirected
 
-```
+```{py}
 #Load the dataset
 data=pd.read_csv("facebook_combined.txt",sep=" ", header=None)
 
