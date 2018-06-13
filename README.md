@@ -76,6 +76,8 @@ The relationships are the following: 1: [11], 2: [11, 5, 7], 3: [6], 4: [6], 5: 
 
 After that we created a graphical representation of the above relationships.
 
+![alt text](https://github.com/ggeop/Recommendation-System/blob/master/imgs/SampleDatasetgGraphs.png)
+
 ## Local structure based methods for link prediction
 
 ### Recommending friends using Common neighbors (friend-of-friend (FoF) method)
@@ -424,11 +426,13 @@ All of the methods that we have used for the prediction belong to the greater fa
 
 Having that in mind, since all of our methods belongs to the same family we did not expect any significant deviance among them. After we compared the methods the assumption we had in mind about all the methods being close, came to life. So, as you can see from the graph below the three methods were really close, with the Adamic/Adar method to have the best score and the other two following. We also had in mind that the results may differ each time we run the algorithm, something that we did not want, so we had to test it. After running the algorithm several times we ended up to the conclusion that the Adamic/Adar method comes always as the best method among the three of them but the other two may change positions each time. So, as a result the Adamic/Adar method is the best for the recommendation of friends, with a slightly better score than the other two, and the Jaccard and FoF methods are coming in second and third place with a negligible deviance among them. About the extra method we used, Leicht-Holme&Newman, it was always the worst among the other three for the prediction.
 
+![alt text](https://github.com/ggeop/Recommendation-System/blob/master/imgs/MethodsComparison.png)
 
 ### 2nd Evaluation System
 
 We created an alternative evaluation system in order to increase the accuracy. Specifically, we took a target user and we removed one by one all of its friends. Hence, we calculated the number of friends that were suggested and then we divided it with the total initial number of friends. This computations are hard and intensive, so we did this procedure for 2-3 different targets. Also we created the following figure (see the Figure 8 - 2nd Evaluation System Interpretation) in order to explain the procedure of this evaluation method.
 
+![alt text](https://github.com/ggeop/Recommendation-System/blob/master/imgs/Evaluation%20System%20v2.png)
 ```
 def finalScore2(dataset,users, n):
     
