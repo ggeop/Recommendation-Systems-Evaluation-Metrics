@@ -1,3 +1,5 @@
+![alt text](https://github.com/ggeop/Recommendation-System/blob/master/imgs/photo_cover-01.png)
+
 ## Datasets
 
 ### Original Dataset
