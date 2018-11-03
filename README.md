@@ -74,7 +74,7 @@ for node in [1,2,3,4,5,6,7,8,9,11]:
 print(friendships) 
 
 ```
-The relationships are the following: 1: [11], 2: [11, 5, 7], 3: [6], 4: [6], 5: [2, 7, 11], 6: [2, 7, 11], 7: [9, 6, 2], 8: [9], 9: [3, 11], 11: [2]
+The relationships are the following: 1: [11], 2: [5, 6, 7, 11], 3: [6, 9], 4: [6], 5: [2, 7], 6: [2, 3, 4, 7], 7: [2, 5, 6], 8: [9], 9: [3, 8], 11: [1, 2]
 
 After that we created a graphical representation of the above relationships.
 
